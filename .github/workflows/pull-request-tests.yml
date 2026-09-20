@@ -23,4 +23,6 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Run tests
-        run: swift test
+        run: |
+          swift test
+          exit 1
