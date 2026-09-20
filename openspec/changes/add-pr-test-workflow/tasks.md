@@ -7,7 +7,7 @@
 ## 2. Validate the workflow
 
 - [x] 2.1 Validate the workflow YAML and run `swift test` locally to confirm the planned CI command passes the complete package test suite.
-- [ ] 2.2 Open or update a pull request against `main`, then confirm GitHub runs the check for the current head commit with read-only permissions.
+- [x] 2.2 Open or update a pull request against `main`, then confirm GitHub runs the check for the current head commit with read-only permissions.
 - [ ] 2.3 Push a follow-up commit while a run is active and confirm GitHub cancels the superseded run.
 
 ## 3. Enforce the merge gate
