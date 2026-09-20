@@ -13,5 +13,5 @@
 ## 3. Enforce the merge gate
 
 - [x] 3.1 After GitHub records the check name, add it as a required status check in the ruleset or branch protection settings for `main`.
-- [ ] 3.2 Confirm GitHub blocks merging while the required check is pending, failed, or cancelled.
+- [x] 3.2 Confirm GitHub blocks merging while the required check is pending, failed, or cancelled.
 - [ ] 3.3 Confirm GitHub allows merging after the required check passes and all other repository rules are satisfied.
