@@ -33,9 +33,9 @@
 ## 5. Homebrew formula and service
 
 - [ ] 5.1 Add an `auto-wallpaper` formula for a stable tagged source archive with a SHA-256 checksum, Apple Silicon architecture requirement, macOS 15 minimum, Swift release build, and executable installation
-- [ ] 5.2 Add a formula fetch phase that downloads the exact SwiftPM versions in `Package.resolved`, then build during install with automatic dependency resolution and remote updates disabled
-- [ ] 5.3 Add a formula service block that runs `opt_bin/"auto-wallpaper" watch` without root privileges and keeps the watcher alive after a crash
-- [ ] 5.4 Add a formula test block that checks installed command behavior without changing wallpaper, configuration, or service state
+- [x] 5.2 Add a formula fetch phase that downloads the exact SwiftPM versions in `Package.resolved`, then build during install with automatic dependency resolution and remote updates disabled
+- [x] 5.3 Add a formula service block that runs `opt_bin/"auto-wallpaper" watch` without root privileges and keeps the watcher alive after a crash
+- [x] 5.4 Add a formula test block that checks installed command behavior without changing wallpaper, configuration, or service state
 - [ ] 5.5 Run `brew style`, `brew audit --new --formula`, a clean-cache `brew fetch --build-from-source`, a network-isolated `brew install --build-from-source`, and `brew test` against the formula and fix every failure
 - [ ] 5.6 Smoke-test per-user `brew services` start, list, restart, and stop behavior, including the stable executable path after an upgrade
 - [ ] 5.7 Verify that stopping or uninstalling the formula does not remove `$HOME/.config/auto-wallpaper/config` or configured image files
@@ -50,8 +50,8 @@
 
 ## 7. Documentation and verification
 
-- [ ] 7.1 Write a README with the Apple Silicon and macOS 15 or later requirements, the current Homebrew Tier 1 support assumption, installation and upgrade steps, the configuration file format, command examples, `brew services` setup, troubleshooting, and full uninstall instructions
+- [x] 7.1 Write a README with the Apple Silicon and macOS 15 or later requirements, the current Homebrew Tier 1 support assumption, installation and upgrade steps, the configuration file format, command examples, `brew services` setup, troubleshooting, and full uninstall instructions
 - [x] 7.2 Run the full Swift test suite and fix all failures
 - [ ] 7.3 Build the release executable and smoke-test help, unconfigured status, invalid path handling, and formula metadata without changing the developer's wallpaper or service state
-- [ ] 7.4 Review every OpenSpec scenario against automated tests or a documented manual check and record any platform-only verification steps in the README
-- [ ] 7.5 Document the tagged-release and project-tap publication workflow, including formula URL and checksum updates and a check that the declared platform floor still matches Homebrew's current Tier 1 matrix
+- [x] 7.4 Review every OpenSpec scenario against automated tests or a documented manual check and record any platform-only verification steps in the README
+- [x] 7.5 Document the tagged-release and project-tap publication workflow, including formula URL and checksum updates and a check that the declared platform floor still matches Homebrew's current Tier 1 matrix
